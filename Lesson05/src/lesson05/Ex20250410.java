@@ -62,6 +62,7 @@ public class Ex20250410 {
 		int input = scanner.nextInt();
 		
 		int num = 12;
+		int count =0;
 		for(int i = 2; i <= num ; i++) {
 			System.out.println("%d : %d >> %s", i,num % i, num % i == 0 ? "약수" : "약수아님");num % i
 			if(num % i == 0) {
