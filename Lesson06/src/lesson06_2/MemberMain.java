@@ -1,4 +1,6 @@
-package lesson07;
+package lesson06_2;
+
+import lesson07.Member;
 
 public class MemberMain {
 

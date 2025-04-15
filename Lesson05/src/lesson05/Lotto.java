@@ -16,6 +16,7 @@ public class Lotto {
 					insert = false;
 					break;  //for문 브레이크
 				}
+				
 			}
 			
 			if(insert) {
