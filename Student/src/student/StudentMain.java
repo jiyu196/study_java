@@ -19,9 +19,8 @@ public class StudentMain {
 				
 			case 2:
 				service.read();
-				System.out.println("점수를 입력하세요 >");
 				break;
-			
+				
 			case 3:
 				service.modify();
 				break;
@@ -48,8 +47,7 @@ public class StudentMain {
 //		service.avg();
 //		System.out.println("점수를 입력하세요 >");
 //		break;
+	
 		
-		Student stu = new Student(); {
-		}
 	}
 }
