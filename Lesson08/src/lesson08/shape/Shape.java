@@ -1,11 +1,7 @@
 package lesson08.shape;
 
-public class Shape {
+public abstract class Shape {
 	
-	public double crcum() {
-		return 0;
-	}
-	public double area() {
-		return 0;
-	}
+public abstract double circum();
+public abstract double area();   //추상 클래스
 }

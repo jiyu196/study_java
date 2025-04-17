@@ -16,12 +16,15 @@ public class Student {
 	int kor;
 	int eng;
 	int mat;
+	double avgSub;
+	double seq; //sequential score이 석차점수
 	
 	
 	int total = kor+eng+mat;  //필드이기때문에 값을 지속적으로 계산하 수 업슴
 	//총점이라고하는 메서드를 만드렁야함
 	
-	double avg = (kor+eng+mat)/3;
+	double avg = (kor+eng+mat)/3.2d;
+	
 	
 	Student(){}
 	
@@ -32,20 +35,23 @@ public class Student {
 		
 	};
 	
-	Student(int no, String name,int kor, int eng, int mat){  //이게 기본 생성자+두번째 생성자?
+	Student(int no, String name,int kor, int eng, int mat, int avgSub, int seq){  //이게 기본 생성자+두번째 생성자?
 		this(no,name);   
 		this.kor = kor;
 		this.eng = eng;
 		this.mat = mat;
+		this.avgSub = avgSub;
+		this.seq = seq;
 	}
 	int total () { //이렇게는 메서드가됨
 		return kor+eng+mat;
 	}
 	
 	double avg () {
-		return (kor+eng+mat)/3;
+		return (kor+eng+mat)/3.2d;  //=> return total() /3d;
 		
 	}
+	
 	
 	//평균 계산 double type
 	//2. 수정, 삭제 기능 구현. 학번 입력받아서 그에 해당하는 학생만 삭제해야함
