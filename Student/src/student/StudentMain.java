@@ -12,16 +12,16 @@ public class StudentMain {
 		StudentService service = new StudentService();
 		System.out.println("================ 학생 점수 관리 프로그램 ==================");
 		for(;;) {
-			switch (StudentUtils.nextInt("1. 등록 2. 조회 3. 수정 4. 삭제 5. 종료")) {
+			switch (StudentUtils.nextInt("1. 등록 2. 조회 3. 수정 4. 삭제 5. 과목별 평균 6. 석차순 조회 7. 종료")) {
 			case 1:
 				service.register();
 				break;
 				
+				
 			case 2:
 				service.read();
-				System.out.println("점수를 입력하세요 >");
 				break;
-			
+				
 			case 3:
 				service.modify();
 				break;
@@ -29,8 +29,16 @@ public class StudentMain {
 			case 4:
 				service.remove();
 				break;
-			
+				
 			case 5:
+				service.avgSub();
+				break;
+				
+			case 6:
+				service.seq();
+				break;
+			
+			case 7:
 				System.out.println("bye~!");
 				return;
 			default:
@@ -48,8 +56,7 @@ public class StudentMain {
 //		service.avg();
 //		System.out.println("점수를 입력하세요 >");
 //		break;
+	
 		
-		Student stu = new Student(); {
-		}
 	}
 }
