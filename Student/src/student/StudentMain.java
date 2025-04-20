@@ -31,11 +31,11 @@ public class StudentMain {
 				break;
 				
 			case 5:
-				service.avgSub();
+				service.allAvg();
 				break;
 				
 			case 6:
-				service.seq();
+				service.readOrder();
 				break;
 			
 			case 7:
