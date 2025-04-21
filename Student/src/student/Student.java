@@ -11,10 +11,12 @@ public class Student {
 	//학생 한명을하기때문에 student 페이지에서 적음
 	
 	int no;
+	int noChange;
 	String name;
 	int kor;
 	int eng;
 	int mat;
+<<<<<<< HEAD
 	 //sequential score이 석차점수
 	
 	
@@ -22,6 +24,16 @@ public class Student {
 	//총점이라고하는 메서드를 만드렁야함
 	
 //	double avg = (kor+eng+mat)/3.2d;
+=======
+	double avgSub;
+	double seq; //sequential score이 석차점수
+	
+	
+	int total = kor+eng+mat;  //필드이기때문에 값을 지속적으로 계산하 수 업슴
+	//총점이라고하는 메서드를 만드렁야함
+	
+	double avg = (kor+eng+mat)/3.2d;
+>>>>>>> 22aa491aad9f2f3c52b76fede94c876af707b4b2
 	
 	
 	Student(){}
@@ -30,6 +42,7 @@ public class Student {
 	Student(int no, String name){  //이게 기본 생성자+두번째 생성자?
 		this.no = no;
 		this. name = name;
+<<<<<<< HEAD
 		
 	}
 	
@@ -62,9 +75,35 @@ public class Student {
 //		return 
 //	}
 	
+=======
+		
+	};
+	
+	Student(int no, String name,int kor, int eng, int mat, int avgSub, int seq){  //이게 기본 생성자+두번째 생성자?
+		this(no,name);   
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+		this.avgSub = avgSub;
+		this.seq = seq;
+	}
+	int total () { //이렇게는 메서드가됨
+		return kor+eng+mat;
+	}
+	
+	double avg () {
+		return (kor+eng+mat)/3.2d;  //=> return total() /3d;
+		
+	}
+	
+>>>>>>> 22aa491aad9f2f3c52b76fede94c876af707b4b2
 	
 	//평균 계산 double type
 	//2. 수정, 삭제 기능 구현. 학번 입력받아서 그에 해당하는 학생만 삭제해야함
 	//( 수정 및 삭제 구현. 이름새로 입력받고 순차적으로 입력받은 후 덮어쓰기)
 	//3. 배열 늘리기. 3명째 입력하는 순간 터지는데 배열 늘리기- 전에 한번 했었음
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 22aa491aad9f2f3c52b76fede94c876af707b4b2
